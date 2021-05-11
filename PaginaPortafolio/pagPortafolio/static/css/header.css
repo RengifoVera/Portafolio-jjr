@@ -1,0 +1,84 @@
+#hero-container{
+    height: 300px;
+}
+
+#hero-background{
+    background-color: #4b4c4d;
+    position: absolute;
+    width: 0;
+    height: 300px;
+    transition: 1s ease-in-out;
+}
+
+#hero-img{
+    width: 100%;
+    max-width: 300px;
+    opacity: 0;
+    z-index: 1000;
+    transition: 2s ease-in-out;
+}
+
+#lines {
+    opacity: 0;
+    z-index: 999;
+    transition: 1s ease-in-out;
+}
+ 
+
+.spin{
+    
+    animation-name: spin-icons;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin-icons {
+from    { transform: rotate(0deg); }
+4%      { transform: rotate(5deg); }
+12.5%   { transform: rotate(-5deg); }
+21%     { transform: rotate(5deg); }
+29%     { transform: rotate(-5deg); }
+37.5%   { transform: rotate(5deg); }
+46%     { transform: rotate(-5deg); }
+50%,to  { transform: rotate(0deg); }
+}
+#hero-text{
+    opacity: 0;
+    transition: 2s ease-in-out;   
+}
+
+.max-icons{
+    font-size: 30px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+@media screen and (max-width: 700px) {
+    #hero-content {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    #hero-container {
+        height: 300px;
+    }
+    #hero-background {
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+ }
+
+@media screen and(max-width: 575.98px) { 
+    .spin {
+        max-width: 260px;
+    }
+ }

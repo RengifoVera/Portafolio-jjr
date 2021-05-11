@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <title>Jhon Jairo Rengifo - Developer </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cuerpo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/modal.css' %}">
+</head>
+<body >
+    <!-------------------CABECERA-------------------->
+    <div>
+        <section id="hero-container"  class="position-relative text-light">
+            
+        <div  id="hero-background" >
+             <div id="hero-content" class="container h-100">
+                <div class="row no-gutters h-100 d-flex">
+                    <div id="hero-text" class="col-md-6 align-self-center">
+                      <h1 class="display-4  mb-4 ">Jhon Jairo Rengifo Vera</h1>
+                      <i class="spin fab fa-python lead mb-5 max-icons"></i>
+                      <i class="spin fab fa-html5  lead mb-5 max-icons"></i>
+                      <i class="spin fab fa-css3-alt  lead mb-5 max-icons"></i>
+                      <i class="spin fas fa-database lead mb-5 max-icons"></i>
+                    </div>
+                
+                </div>
+            </div>
+                
+        </div>
+        </section>
+    </div>
+    
+ <!-------------------MENU STICKY---------------------------->   
+    <div>
+        <header class="sticky">
+            
+                <a href=""><img style="padding: 10px;" src="static/img/jrr.png"></a>
+        
+            <nav id="menu" > 
+                <ul>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#cont">Contact</a></li>
+    
+                </ul>
+            </nav>
+            <div class="menu-toggle ">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+    </div> 
+  
+<!------------------PORTAFOLIO---------------------->      
+    <div id="portafolio" class="titulo">
+    <h2>PORTAFOLIO</h2>
+    <hr class="section-hr">
+    </div>        
+            <div class="row">
+                <div class="col-md-4 img-container">  
+                    <div class="div-imagen">
+                        <a href="#modal1" >
+                        <img class=" imagen-modal imagen"src="static/img/electro.png"   >                        
+                        </a>
+                        <div class="texto">Electro Aires</div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">  
+                    <div class="div-imagen">
+                        <a href="#modal1" >
+                        <img class=" imagen-modal imagen"src="static/img/electro.png"   >                        
+                        </a>
+                        <div class="texto">Electro Aires</div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">  
+                    <div class="div-imagen">
+                        <a href="#modal1" >
+                        <img class=" imagen-modal imagen"src="static/img/electro.png"   >                        
+                        </a>
+                        <div class="texto">Electro Aires</div>
+                    </div>
+                </div>
+ 
+            </div>
+        
+        <!------------------Modal1---------------------->     
+        <div id="modal1" class="modalmask" style="overflow-y:scroll ;">
+            <div class="modalbox movedown"  style="text-align: center;">
+
+                <a href="#close" title="Close" class="close"><i class="fas fa-times"></i></a>
+                <h1>Electro Aires & Aires</h1>
+                <h2>Aplicacion de Escritorio</h2>
+                <hr>
+                <img class="modal-img" src="static/img/electro.png" > 
+                <hr>
+                <p>Electro Aires & Aires App es un sistema que se diseño y se creo para la gestion de ventas y registro de vehiculos para controlar los ingresos de un taller automotriz, usando las tecnologias de python,postgresql y probado de las maneras eficientes y eficases para la deteccion de errores</p>
+            </div>
+        </div>     
+<!------------------SKILLS---------------------->
+    <div class="fondo">
+        <div id="skills" class="titulo" >
+            <h2>SKILL SET</h2>
+            <hr class="section-hr">
+        </div>
+        
+        <div class="row ">
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img svg-skill"  src="static/svg/python.svg"  >
+                    <div class="text">PYTHON</div>
+                </div>          
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img svg-skill" src="static/svg/html.svg"  >
+                    <div class="text">HTML</div>
+                </div>  
+
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/css.svg"  >
+                    <div class="text">CSS</div>
+                </div>  
+
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/git.svg"  >
+                    <div class="text">GIT</div>
+                </div>  
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/bash.svg"  >
+                    <div class="text">BASH</div>
+                </div>  
+
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/photoshop.svg"  >
+                    <div class="text">PHOTOSHOP</div>                
+                </div>  
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/postgresql.svg"  >
+                    <div class="text">POSTGRESQL</div>                
+                </div>  
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/bootstrap.svg"  >
+                    <div class="text">BOOTSTRAP</div>                
+                </div>  
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/django.svg"  >
+                    <div class="text">DJANGO</div>                
+                </div>  
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/3ds.svg"  >
+                    <div class="text">3D'S MAX</div>                
+                </div>  
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/js.svg"  >
+                    <div class="text">JavaScript En Proceso..</div>
+                </div>  
+
+            </div>
+            <div class="col-sm-3 col-xs-4" style="text-align: center;">
+                <div class="div-img">
+                    <img class="img  svg-skill" src="static/svg/react.svg"  >
+                    <div class="text">React En Proceso..</div>
+                </div>  
+
+            </div>
+        </div>
+    </div>
+
+
+<!------------------Experencia ---------------------->
+        <div id="exp" class="titulo">
+            <h2>EXPERIENCIA</h2>
+            <hr class="section-hr">
+        </div>
+        
+
+        <div class="row">
+            <div class="col-sm-4 col-xs-12" style="text-align: center; padding: 20px;">
+                    <div class="exp">
+                        <a href="#exp-modal1">
+                            <img class="exp-container" src="static/svg/python.svg">
+                        </a>
+                    </div>          
+                </div>
+            <div class="col-sm-4 col-xs-12" style="text-align: center;padding: 20px;">
+                <div class="exp">
+                    <img class="exp-container" src="static/svg/python.svg" >
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-12" style="text-align: center;padding: 20px;">
+                <div class="exp">
+                    <img class="exp-container" src="static/svg/python.svg" >
+                </div>
+            </div>
+        </div>
+
+                <!------------------EXP-Modal1---------------------->     
+<div id="exp-modal1" class="modalmask" style="overflow-y:scroll ;">
+    <div class="modalbox movedown">
+
+        <div id="container-modal">
+            <div id="modal-header" >
+                <a href="#close" title="Close" class="close"><i class="fas fa-times"></i></a>
+                <h1>Jhon Jairo Rengifo Vera</h1>
+                <h6 style="text-align: center;">Colombia | rengifo-vera@hotmail.com</h6>
+            </div>  
+        </div>
+    </div>
+</div>   
+<!------------------CONTACTO---------------------->
+    <div class="fondo">
+            <div id="cont" class="titulo" >
+                    <h2>CONTACTO</h2>
+                    <hr class="section-hr">
+                
+            </div>
+            
+            <div class="col-xs-10 col-xs-offset-1 formulario titulo " >
+                <form action="/" method="POST">{% csrf_token %}
+                    
+                    <input class="sinbordefondo" placeholder="Asunto" type="text" name="Asunto" required> 
+                    
+                    <hr>
+                    <input  class="sinbordefondo "  placeholder="Nombres " type="text" name="name" required> 
+                    <hr>
+
+                    <input  class="sinbordefondo "  placeholder="E-mail " type="text" name="email" required> 
+                    <hr>
+                    
+                    <input class="sinbordefondo"  placeholder="Telefono " type="text" name="tel"> 
+                    <hr>
+                    
+                    <input class="sinbordefondo "  placeholder="Mensaje " type="text" name="mensaje" required> 
+                    <hr>
+                    <input type="submit"  value="Enviar">
+                </form>
+            </div>
+ 
+    
+
+<!------------------FOOTER---------------------->
+
+<footer id="footer" style="padding-top: 30px;">
+    <div id="social-media" style="text-align: center; padding-top: 60px; text-decoration: none; vertical-align: middle;">
+        <a href="https://twitter.com/JhonJRVera">
+            <img id="twitter" src="static/img/twitter.png">
+        </a>&nbsp;
+        <a href="https://www.facebook.com/JhonJRVera/">
+            <img id="facebook" src="static/img/facebook.png">
+        </a>&nbsp;
+
+
+    </div> 
+    <small>
+        <span>Developed and designed by&nbsp;</span>
+        <a href="" style="text-decoration: none;">JhonJRVera</a>. ©
+
+        <script type="text/javascript"> var d=new Date() 
+        document.write(d.getFullYear())</script>
+
+        <span>. All rights reserved.</span>
+    </small>
+</footer>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="{% static 'js/menu.js' %}"></script> 
+<script src="{% static 'js/header.js' %}"></script> 
+<script src="{% static 'js/m.js' %}"></script>
+<script src="{% static 'js/modal.js' %}"></script>
+</body>
+   
+
+</html>

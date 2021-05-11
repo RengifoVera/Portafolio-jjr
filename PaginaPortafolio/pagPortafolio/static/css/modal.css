@@ -1,0 +1,185 @@
+.imagen-modal{
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #999;
+}
+
+
+/*------------------Modal1----------------------*/     
+.modalmask {
+    position: fixed;
+    font-family:"Montserrat";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 100000;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+.modalmask:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalbox{
+    width: 70%;
+    position: relative;
+    padding: 5px 20px 5px 20px;
+    background: #fff;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+
+}
+.modalbox h1{
+    text-align: center;
+    font-family: inherit;
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight: bold;
+}  
+.modalbox h2{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+    padding-bottom: 10px;
+} 
+/* --------------- CENTRAR VENTANA MODAL----------*/
+
+.modal-img{
+    width:60%;
+    text-align: center;
+}  
+ 
+
+.movedown {
+    margin: 0 auto;
+}
+.rotate {
+    margin: 10% auto;
+    -webkit-transform: scale(-5,-5);
+    transform: scale(-5,-5);
+}
+.resize {
+    margin: 10% auto;
+    width:0;
+    height:0;
+ 
+}
+.modalmask:target .movedown{       
+    margin:10% auto;
+}
+
+
+.close {
+    background: #ffffff;
+    color: #36bed9;
+    line-height: 25px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    top: 5px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:25px;
+ 
+}
+ 
+.close:hover {
+    background: #36bed9;
+    color:rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .modalbox{
+        width: 90%;
+        position: relative;
+        padding: 5px 20px 5px 20px;
+        background: #fff;
+        border-radius:10px;
+        -webkit-transition: all 500ms ease-in;
+        -moz-transition: all 500ms ease-in;
+        transition: all 500ms ease-in;
+        align-items: center;
+        
+    }
+
+    
+    .modal-img img{
+        text-align: center;
+        width: 80%;
+    }  
+    
+}
+
+/*------- ANIMACION IMAGEN MODAL ----------------*/
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
+}
+.div-imagen {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-imagen .imagen {
+    text-decoration: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+
+}
+.div-imagen .texto {
+
+
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    transform: translate(0px);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    opacity: 0;
+    transition: transfom opacity 1.5s;
+}
+.div-imagen:hover .imagen {
+
+    transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+.div-imagen:hover .texto {
+    transform: translate(0px, -20px);
+    opacity: 1;
+
+}
