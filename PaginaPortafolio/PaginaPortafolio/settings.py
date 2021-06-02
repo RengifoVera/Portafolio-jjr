@@ -25,7 +25,11 @@ SECRET_KEY = 'hamh0a(evepp1^2!nobo%)ahejsg^_-j=8i6oa45&14ukny*he'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['rengifovera.pythonanywhere.com']
+=======
+ALLOWED_HOSTS = ['rengifovera.pythonanywhere.com','127.0.0.1']
+>>>>>>> d98958f57e2dac895f1b6d0dab70368d54e884f7
 
 
 # Application definition

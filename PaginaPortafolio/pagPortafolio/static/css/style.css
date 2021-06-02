@@ -28,7 +28,6 @@ small {
 }
 #footer {
     background: linear-gradient(#323333, #2a2b2b); 
-
 }
 #footer {
     padding: 3rem 0;
@@ -101,8 +100,6 @@ display: inline-block;
     background: #ffffff;
     color:  rgb(0, 0, 0);
     
-
-
 }
 html{
     scroll-behavior: smooth;
